@@ -1,0 +1,19 @@
+[project]
+name = "myproject"
+version = "1.0"
+dependencies = [
+  "dj-database-url",
+  "django==3.2.*",
+  "gunicorn",
+  "psycopg2",
+  "whitenoise",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "django-stubs",
+  "ipdb",
+  "pip-tools",
+  "ruff",
+]
